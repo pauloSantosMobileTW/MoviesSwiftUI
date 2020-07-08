@@ -24,6 +24,7 @@
 		EF1C405A24B3AFC50084047B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1C405824B3AFC50084047B /* LaunchScreen.storyboard */; };
 		EF1C406524B3AFC60084047B /* Movies_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C406424B3AFC60084047B /* Movies_SwiftUITests.swift */; };
 		EF1C407024B3AFC60084047B /* Movies_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C406F24B3AFC60084047B /* Movies_SwiftUIUITests.swift */; };
+		EF5C154824B6586900C19936 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5C154724B6586900C19936 /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EF1C406B24B3AFC60084047B /* Movies-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movies-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1C406F24B3AFC60084047B /* Movies_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		EF1C407124B3AFC60084047B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5C154724B6586900C19936 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,22 @@
 			path = "Movies-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		EF5C154424B6571A00C19936 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF5C154524B6581400C19936 /* Model */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EF5C154524B6581400C19936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF5C154724B6586900C19936 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EF783D5524B3B8A5002A51D4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +203,7 @@
 		EF783D5624B3B8B4002A51D4 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				EF5C154424B6571A00C19936 /* DataManager */,
 				EF1C405124B3AFC20084047B /* MovieListView.swift */,
 				908687B424B50AB300CA9DCA /* MovieListViewModel.swift */,
 				908687BF24B5162500CA9DCA /* MovieEntity.swift */,
@@ -376,6 +395,7 @@
 				EF1C405024B3AFC20084047B /* SceneDelegate.swift in Sources */,
 				44A5963024B64637006FE10C /* EnvironmentValues+ImageCache.swift in Sources */,
 				EF1C405224B3AFC20084047B /* MovieListView.swift in Sources */,
+				EF5C154824B6586900C19936 /* MovieModel.swift in Sources */,
 				44A5962E24B645FC006FE10C /* AsyncImage.swift in Sources */,
 				908687BA24B50BA800CA9DCA /* Grid.swift in Sources */,
 				44A5962924B64418006FE10C /* ImageLoader.swift in Sources */,

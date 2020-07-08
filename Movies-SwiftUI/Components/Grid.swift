@@ -26,7 +26,7 @@ struct Grid<GenericCell: GridCell>: View {
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(0..<lines + 1) { line in
+                ForEach(0..<lines + 1, id: \.self) { line in
                     HStack {
                         ForEach(0..<self.numberOfColums) { colum in
                             if self.shouldShowCell(line: line,
