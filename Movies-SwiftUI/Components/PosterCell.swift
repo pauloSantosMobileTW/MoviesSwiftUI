@@ -19,8 +19,8 @@ struct PosterCell: GridCell {
         }
     }
 
-    private struct PlaceHolder: View{
-        var body: some View{
+    private struct PlaceHolder: View {
+        var body: some View {
             RoundedRectangle(cornerRadius: 10)
             .fill(Color.orange)
             .frame(height: 150)
