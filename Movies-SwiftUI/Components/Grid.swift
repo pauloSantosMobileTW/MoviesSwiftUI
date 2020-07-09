@@ -28,12 +28,13 @@ struct Grid<GenericCell: GridCell>: View {
             VStack {
                 ForEach(0..<lines + 1, id: \.self) { line in
                     HStack {
-                        ForEach(0..<self.numberOfColums) { colum in
-                            if self.shouldShowCell(line: line,
-                                                   colum: colum) {
-                                GenericCell(entity: self.itemFor(line: line, colum: colum))
-                            } else {
-                                EmptyCell()
+                        ForEach(0..<self.numberOfColums, id: \.self) { colum in
+                            Group {
+                                if self.shouldShowCell(line: line, colum: colum) {
+                                    GenericCell(entity: self.itemFor(line: line, colum: colum))
+                                } else {
+                                    EmptyCell()
+                                }
                             }
                         }
                     }
